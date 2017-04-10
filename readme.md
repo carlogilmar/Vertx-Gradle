@@ -1,3 +1,7 @@
+# Run the project
+
+> gradle run
+
 # Create Jar file
 
 > ./gradlew shadowJar
