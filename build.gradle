@@ -45,12 +45,13 @@ shadowJar {
 }
 
 run {
-  args = ['run', mainVerticleName, "--redeploy=$watchForChange", "--launcher-class=$mainClassName", "--on-redeploy=$doOnChange","--conf=${projectDir}/conf.json"]
+  //args = ['run', mainVerticleName, "--redeploy=$watchForChange", "--launcher-class=$mainClassName", "--on-redeploy=$doOnChange","--conf=${projectDir}/conf.json"]
+  args = ['run', mainVerticleName, "--redeploy=$watchForChange", "--launcher-class=$mainClassName", "--on-redeploy=$doOnChange"]
 }
 
-runShadow{
+/*runShadow{
   args '-conf conf.json'
-}
+}*/
 
 task wrapper(type: Wrapper) {
   gradleVersion = '2.8'
