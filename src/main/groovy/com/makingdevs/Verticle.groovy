@@ -1,3 +1,4 @@
+package com.makingdevs
 vertx.eventBus().consumer("com.carlogilmar.reader"){ message ->
   def text = message.body()
   message.reply("[It Works]")
