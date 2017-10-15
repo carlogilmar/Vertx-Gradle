@@ -6,7 +6,7 @@ import io.vertx.core.DeploymentOptions
 class MainVerticle extends AbstractVerticle {
   @Override
   void start(){
-    vertx.deployVerticle("src/main/groovy/com/makingdevs/Webserver.groovy")
+    vertx.deployVerticle("src/main/groovy/com/makingdevs/InitVerticle.groovy")
   }
 }
 
